@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background: linear-gradient(135deg, #ff6f61, #9c27b0);
+    background: linear-gradient(135deg, #FBE4D8,#DFB6B2 #4E4CED);
     text-align: center;
 }
 
