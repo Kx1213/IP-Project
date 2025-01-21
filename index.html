@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Web App</title>
+    <title>Sales Platform</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
@@ -17,6 +16,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#cart">Cart</a></li>
+                <li><a href="#voucher">Redeem Voucher</a></li>
+                <li><a href="#settings">Settings</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,7 @@
         <div class="hero-content">
             <div id="hero-animation"></div>
             <h1>WELCOME</h1>
-            <p>Your favorite destination for exclusive gundam</p>
+            <p>Your favorite destination for exclusive Gundam models</p>
         </div>
     </section>
 
@@ -33,13 +34,13 @@
         <h2>Our Products</h2>
         <div class="product-list">
             <div class="product-card">
-                <img src="images/bike.jpg" alt="Road Bike">
+                <img src="images/rx78.jpg" alt="RX 78 Gundam">
                 <h3>RX 78 Gundam Bust</h3>
                 <p>$80.00</p>
-                <button class="add-to-cart" data-name="PEUGEOT - LR01" data-price="1999.99">Add to Cart</button>
+                <button class="add-to-cart" data-name="RX 78 Gundam Bust" data-price="80.00">Add to Cart</button>
             </div>
             <div class="product-card">
-                <img src="images/gundam.jpg" alt="Barbatos Lupus Rex">
+                <img src="images/barbatos.jpg" alt="Barbatos Lupus Rex">
                 <h3>Barbatos Lupus Rex Bust</h3>
                 <p>$80.00</p>
                 <button class="add-to-cart" data-name="Barbatos Lupus Rex Bust" data-price="80.00">Add to Cart</button>
@@ -58,6 +59,30 @@
         </div>
     </section>
 
+    <section id="voucher" class="redeem-voucher">
+        <h2>Redeem Voucher</h2>
+        <p>Enter your voucher code below to redeem:</p>
+        <input type="text" id="voucher-code" placeholder="Enter voucher code">
+        <button id="redeem-voucher">Redeem</button>
+        <p id="voucher-message"></p>
+    </section>
+
+    <section id="settings" class="settings-page">
+        <h2>Settings</h2>
+        <form id="settings-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <button type="submit">Save Settings</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2025 Gunpla. All rights reserved.</p>
     </footer>
@@ -65,4 +90,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
