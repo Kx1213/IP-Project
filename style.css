@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -155,6 +154,86 @@ header nav ul li a:hover {
 }
 
 .cart-total button:hover {
+    background-color: #e05a50;
+}
+
+.redeem-voucher {
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.redeem-voucher input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background-color: #292929;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.redeem-voucher button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.redeem-voucher button:hover {
+    background-color: #e05a50;
+}
+
+.redeem-voucher p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.settings-page {
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+.settings-page form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #292929;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.settings-page label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.settings-page input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.settings-page button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.settings-page button:hover {
     background-color: #e05a50;
 }
 
