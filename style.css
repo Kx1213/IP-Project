@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
-    background-color: #121212;
+    background-color: #242C3B;
 }
 
 header.navbar {
@@ -68,7 +68,7 @@ header nav ul li a:hover {
 
 .products {
     padding: 2rem;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
 }
 
 .products h2 {
@@ -127,7 +127,7 @@ header nav ul li a:hover {
 
 .shopping-cart {
     padding: 2rem;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
 }
 
 .cart-items {
@@ -159,14 +159,14 @@ header nav ul li a:hover {
 
 .redeem-voucher {
     padding: 2rem;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
 }
 
 .redeem-voucher input[type="text"] {
     padding: 0.5rem;
     border: 1px solid #292929;
     border-radius: 5px;
-    background-color: #292929;
+    background-color: #242C3B;
     color: #fff;
     margin-bottom: 1rem;
     display: block;
@@ -195,13 +195,13 @@ header nav ul li a:hover {
 
 .settings-page {
     padding: 2rem;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
 }
 
 .settings-page form {
     max-width: 400px;
     margin: 0 auto;
-    background: #292929;
+    background: #242C3B;
     padding: 1.5rem;
     border-radius: 8px;
 }
@@ -218,7 +218,7 @@ header nav ul li a:hover {
     margin-bottom: 1rem;
     border: 1px solid #292929;
     border-radius: 5px;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
     color: #fff;
 }
 
@@ -240,7 +240,7 @@ header nav ul li a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #1e1e1e;
+    background-color: #242C3B;
     color: #fff;
     font-size: 0.9rem;
 }
