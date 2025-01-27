@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <title>Product Detail</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="logo">Gunpla</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section id="product-detail" class="product-detail">
+        <img id="detail-image" src="" alt="Product Image">
+        <h1 id="detail-title">Loading...</h1>
+        <p id="detail-description">Loading...</p>
+        <div class="price" id="detail-price"></div>
+        <button class="add-to-cart">Add to Cart</button>
+        <button onclick="goBackToShop()">Back to Shop</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gunpla Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="add_to_cart.js"></script>
+</body>
+</html>
