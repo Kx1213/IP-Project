@@ -1,6 +1,6 @@
 // Function to remove item from cart
 function removeItemFromCart(itemId) {
-    fetch(`https://67964437bedc5d43a6c4be08.mockapi.io/01/cart/${itemId}`, {
+    fetch(`https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/cart/${itemId}`, {
         method: 'DELETE',
     })
     .then(response => response.json())
@@ -13,7 +13,7 @@ function removeItemFromCart(itemId) {
 
 // Function to load cart data from API
 function loadCartData() {
-    fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/cart')  
+    fetch('https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/cart')  
         .then(response => response.json())
         .then(data => {
             const cartContainer = document.getElementById('cart-items');

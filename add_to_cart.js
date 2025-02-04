@@ -1,5 +1,5 @@
 // Fetch product data from the API
-fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/product')
+fetch('https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/product')
 .then(response => response.json())
 .then(data => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -16,7 +16,7 @@ fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/product')
 
         // Add to cart functionality
         document.querySelector('.add-to-cart').addEventListener('click', function() {
-            fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/cart', {
+            fetch('https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/cart', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
