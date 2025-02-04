@@ -6,14 +6,14 @@ function removeItemFromCart(itemId) {
     .then(response => response.json())
     .then(() => {
         console.log(`Item with ID ${itemId} removed`);
-        loadCartData();  // Reload the cart after removal
+        loadCartData();  
     })
     .catch(err => console.error('Error removing item:', err));
 }
 
 // Function to load cart data from API
 function loadCartData() {
-    fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/cart')  // Correct API endpoint
+    fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/cart')  
         .then(response => response.json())
         .then(data => {
             const cartContainer = document.getElementById('cart-items');
@@ -37,11 +37,9 @@ function loadCartData() {
                 }).join('');
             }
 
-            // Update the total price
             const total = data.reduce((acc, item) => acc + (parseFloat(item.price) * item.quantity), 0);
             document.getElementById('cart-total').textContent = total.toFixed(2);
 
-            // Attach remove item event listeners
             document.querySelectorAll('.remove-item').forEach(button => {
                 button.addEventListener('click', (e) => {
                     const itemId = e.target.getAttribute('data-id');
