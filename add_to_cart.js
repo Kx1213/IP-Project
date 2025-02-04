@@ -21,7 +21,7 @@ fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/product')
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
+                body: JSON.stringify({ 
                     productId: productId,
                     title: product.title,
                     price: product.price,
