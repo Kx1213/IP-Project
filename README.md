@@ -1,85 +1,4 @@
 # IP-Project
-Gunpla Store Project
-
-Overview
-
-The Gunpla Store is an online platform designed for users to browse and purchase Gunpla model kits. It allows customers to view detailed product descriptions, add items to their shopping cart, and manage their user accounts. This project aims to provide a seamless, responsive shopping experience, making it easier for users to discover products, manage their cart, and adjust their settings. The application uses mock APIs to fetch product data and handle cart management, making it a fully interactive web application.
-
-The store also provides a personalized user experience by allowing customers to update their account information, including their username, email, and password. Whether you're a Gunpla enthusiast looking to expand your collection or a new customer exploring the hobby, this platform provides everything you need for a smooth shopping experience.
-
-Design Process
-
-Target Audience
-
-The Gunpla Store is designed for hobbyists and collectors interested in purchasing Gunpla model kits. This includes both newcomers to the hobby and experienced model builders who wish to purchase new kits or manage their existing collection. The website’s goal is to make browsing, purchasing, and account management as straightforward and enjoyable as possible.
-
-User Stories
-
-As a customer, I want to view detailed product descriptions, so that I can make informed purchasing decisions.
-As a shopper, I want to add products to my cart, so that I can purchase multiple items in a single transaction.
-As a user, I want to be able to view my cart and remove unwanted items, so that I can manage my purchases before checking out.
-As a user, I want to update my account settings (e.g., username, email, password), so that I can keep my profile up to date.
-As a new user, I want to create an account and save my settings, so that I don’t have to re-enter my information for future visits.
-Wireframes and Mockups
-Wireframes and design mockups for the project were created using Adobe XD. These include rough designs for the product pages, shopping cart, and user settings interface. Below is the link to the Adobe XD wireframe (or you can include the PDF here).
-
-Features
-
-
-
-Technologies Used
-
-Frontend
-
-HTML5: Used for structuring the content of the website.
-CSS3: Used to style the pages and create a responsive layout.
-JavaScript: Powers the interactions on the website, including adding products to the cart, managing user settings, and fetching data from APIs.
-Fetch API: Handles communication with the mock API to retrieve product and cart data.
-Backend (API Integration)
-MockAPI: The product catalog and shopping cart data are fetched from MockAPI, providing easy-to-use RESTful APIs.
-RestDB: The user settings data is fetched from RestDB.io, a database for storing user information.
-Assistive AI
-ChatGPT: ChatGPT was used to help with generating and refining JavaScript code for interacting with the mock APIs and handling dynamic content like the shopping cart and user settings. Several coding snippets, especially for handling fetch requests and managing the cart, were improved with AI assistance.
-Testing
-
-Manual Testing Scenarios
-
-Product Catalog
-Navigate to the homepage and verify that all products are displayed correctly with their images and prices.
-Click on a product and verify that the product details (title, description, price) are displayed properly.
-Test the "Add to Cart" button and ensure that the product is added to the cart.
-
-Shopping Cart
-Add multiple products to the cart and verify that the cart displays the correct number of items.
-Click on the "Remove" button next to an item and confirm that it is removed from the cart.
-Ensure the cart total updates correctly after removing an item.
-
-User Settings
-Update the username, email, and password, and verify that the changes are saved successfully.
-Try submitting the settings form with missing required fields and ensure that an error message is displayed.
-
-Browser and Device Testing
-Tested on Chrome, Firefox, and Safari to ensure compatibility across different browsers.
-Verified responsiveness on various devices, including desktop, tablet, and mobile devices.
-
-Bugs and Issues
-Some minor styling issues on mobile devices that caused elements to misalign slightly. These were addressed by adjusting media queries for smaller screen sizes.
-A rare bug where products would not appear in the cart if the user had previously left the page without refreshing. This issue was resolved by reloading cart data on page load.
-
-Credits
-
-Content
-The text for the product descriptions was written by the project team.
-Media
-Product images were sourced from Unsplash and Pixabay, with appropriate attribution.
-Acknowledgements
-Special thanks to ChatGPT for assisting in the JavaScript code development, especially with the handling of APIs and event listeners.
-This format covers all the essential sections for your project documentation, including an overview, design process, features, technologies used, testing process, and credits. Let me know if you need any additional details!
-
-
-
-
-# IP-Project
 GUNPLA
 Overview
 The Gunpla Project is an interactive web platform designed for Gundam model kit enthusiasts. It serves as an online shop where users can explore and purchase Gunpla kits, earn virtual currency through engagement, and redeem vouchers for discounts. The goal is to create an immersive and gamified shopping experience that enhances customer engagement and rewards loyalty.
@@ -128,7 +47,6 @@ Assistive AI
 4.Product card border: help to display the product correctly in both moblie view and desktop view.
 ![alt text](image-3.jpg)
 ![alt text](image-4.jpg)
-5.
 
 
 
