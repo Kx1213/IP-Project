@@ -3,8 +3,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #242C3B;
+    color: #ffffff;
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
 .shopping-cart {
     max-width: 1200px;
     margin: 30px auto;
-    background-color: white;
+    background: linear-gradient(90deg, #363E51,#4C5770);
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -65,7 +65,7 @@ h2 {
 .cart-item {
     display: flex;
     padding: 10px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e16c;
     align-items: center;
 }
 
@@ -95,8 +95,8 @@ h2 {
 
 .remove-item {
     padding: 8px 16px;
-    background-color: #e74c3c;
-    color: white;
+    background: linear-gradient(90deg, #fff0e7,#f7d1ce, #6c69f8);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -104,8 +104,9 @@ h2 {
 }
 
 .remove-item:hover {
-    background-color: #c0392b;
-}
+        transform: translateY(-5px);
+        box-shadow: 0 5px 5px rgb(0, 0, 0);
+    }
 
 /* Cart Total Section */
 .cart-total {
@@ -114,12 +115,13 @@ h2 {
     align-items: center;
     font-size: 18px;
     padding-top: 20px;
-    border-top: 2px solid #e1e1e1;
+    border-top: 2px solid #e1e1e165;
+    color:#6D6DED
 }
 
 .cart-total button {
     padding: 10px 20px;
-    background-color: #27ae60;
+    background: linear-gradient(45deg, #D6D6D6,#4E4CED);
     color: white;
     border: none;
     border-radius: 5px;
@@ -128,7 +130,7 @@ h2 {
 }
 
 .cart-total button:hover {
-    background-color: #2ecc71;
+    transform: translateY(-5px);
 }
 
 /* Footer */

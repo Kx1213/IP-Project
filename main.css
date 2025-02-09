@@ -6,6 +6,25 @@ body {
     background-color: #252C3B;
 
 }
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252C3B; /* Background matches site */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it’s on top */
+}
+
+/* Hide the content while loading */
+#content {
+    display: none;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -62,266 +81,58 @@ body {
 .navbar nav ul li a:hover {
     color: #ddd;
 }
-
-/* Product List Section */
-.products {
-    padding: 2rem;
+.UC {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; 
+    width: 100%; 
 }
 
-.products h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.gif-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 45vw; 
+}
+
+.gif-container h2 {
+    font-size: 1.5rem; 
     color: #ffffff;
+    margin-bottom: 1rem; 
+    text-align: left; 
+    margin-left: 12px;
 }
 
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    justify-content: center;
+.gif-container img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.product-card {
-    background: linear-gradient(180deg, #363e51d5, #191e26c5);
-    overflow: hidden;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.4s, box-shadow 0.4s;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(180deg, #ffffff2c, #0000002f) 1;
+.gif-container:nth-child(2) {
+    transform: translateX(-1vw); 
 }
 
 
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 10px rgb(0, 0, 0);
-}
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 0.5rem;
-}
 
-.product-card h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: #ffffff;
-}
-
-.product-card p {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #6D6DED;
-    margin: 0.5rem 0;
-}
-
-.product-card .view-details {
-    background: linear-gradient(90deg, #FBE4D8,#DFB6B2, #4E4CED);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.product-card .view-details:hover {
-    background: linear-gradient(90deg, #fff0e7,#f7d1ce, #6c69f8);
-}
-
-/* Product Detail Section */
-.product-detail {
-    padding: 2rem;
-    text-align: center;
-    background-color: white;
-    margin: 2rem auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.product-detail img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.product-detail h1 {
-    font-size: 2rem;
-    margin: 1rem 0;
-    color: #333;
-}
-
-.product-detail p {
-    font-size: 1rem;
-    color: #555;
-    margin: 1rem 0;
-}
-
-.product-detail .price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #6D6DED;
-    margin-bottom: 1.5rem;
-}
-
-.product-detail button {
-    background: linear-gradient(135deg, #FBE4D8,#DFB6B2, #4E4CED);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 0.5rem;
-    transition: background-color 0.3s;
-}
-
-.product-detail button:hover {
-    background: linear-gradient(90deg, #fff0e7,#f7d1ce, #6c69f8);
-}
-
-.add-to-cart {
-    padding: 0.5rem 1rem;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart:hover {
-    background-color: #e05a50;
-}
-
-.shopping-cart {
-    padding: 2rem;
-    background-color: #242C3B;
-    color: #ddd;
-}
-
-.cart-items {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: #292929;
-    border-radius: 8px;
-    min-height: 100px;
-}
-
-.cart-total {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.cart-total button {
-    padding: 0.5rem 2rem;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.cart-total button:hover {
-    background-color: #e05a50;
-}
-
-.redeem-voucher {
-    padding: 2rem;
-    background-color: #242C3B;
-    color: #ddd;
-}
-
-.redeem-voucher input[type="text"] {
-    padding: 0.5rem;
-    border: 1px solid #292929;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #fff;
-    margin-bottom: 1rem;
-    display: block;
-    width: 100%;
-}
-
-.redeem-voucher button {
-    padding: 0.5rem 1rem;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.redeem-voucher button:hover {
-    background-color: #e05a50;
-}
-
-.redeem-voucher p {
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.settings-page {
-    padding: 2rem;
-    background-color: #242C3B;
-    color: #ffffff;
-}
-
-.settings-page form {
-    max-width: 400px;
-    margin: 0 auto;
-    background: #242C3B;
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.settings-page label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.settings-page input {
-    padding: 0.5rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid #292929;
-    border-radius: 5px;
-    background-color: #242C3B;
-    color: #fff;
-}
-
-.settings-page button {
-    padding: 0.5rem 1rem;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-}
-
-.settings-page button:hover {
-    background-color: #e05a50;
-}
 
 /* Footer */
 footer {
     background-color: #252C3B;
-    color: white;
-    text-align: center;
+    color: rgb(255, 255, 255);
     padding: 1rem;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+
+

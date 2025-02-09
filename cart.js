@@ -1,19 +1,19 @@
 // Function to remove item from cart
 function removeItemFromCart(itemId) {
-    fetch(`https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/cart/${itemId}`, {
+    fetch(`https://67964437bedc5d43a6c4be08.mockapi.io/01/cart/${itemId}`, {
         method: 'DELETE',
     })
-    .then(response => response.json())
-    .then(() => {
-        console.log(`Item with ID ${itemId} removed`);
-        loadCartData();  
-    })
-    .catch(err => console.error('Error removing item:', err));
+        .then(response => response.json())
+        .then(() => {
+            console.log(`Item with ID ${itemId} removed`);
+            loadCartData(); // Reload cart data after removal
+        })
+        .catch(err => console.error('Error removing item:', err));
 }
 
 // Function to load cart data from API
 function loadCartData() {
-    fetch('https://6796ea9ebedc5d43a6c6565f.mockapi.io/api/v1/cart')  
+    fetch('https://67964437bedc5d43a6c4be08.mockapi.io/01/cart')
         .then(response => response.json())
         .then(data => {
             const cartContainer = document.getElementById('cart-items');
@@ -37,9 +37,11 @@ function loadCartData() {
                 }).join('');
             }
 
+            // Calculate and display the total price
             const total = data.reduce((acc, item) => acc + (parseFloat(item.price) * item.quantity), 0);
             document.getElementById('cart-total').textContent = total.toFixed(2);
 
+            // Add event listeners to remove buttons
             document.querySelectorAll('.remove-item').forEach(button => {
                 button.addEventListener('click', (e) => {
                     const itemId = e.target.getAttribute('data-id');
@@ -50,4 +52,5 @@ function loadCartData() {
         .catch(err => console.error('Error fetching cart data:', err));
 }
 
+// Load cart data when the page loads
 loadCartData();

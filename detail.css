@@ -81,6 +81,7 @@ header nav ul li a {
     max-width: 2000px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
 .product-detail img {
@@ -88,7 +89,11 @@ header nav ul li a {
     max-width: 500px;
     margin-bottom: 20px;
     border-radius: 10px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
+
 
 .product-detail h1 {
     font-size: 2.5rem;
@@ -106,14 +111,14 @@ header nav ul li a {
 .product-detail .price {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #e67e22;
+    color: #6D6DED;
     margin-bottom: 20px;
 }
 
 .product-detail button {
     padding: 12px 25px;
     font-size: 1rem;
-    background-color: #e67e22;
+    background: linear-gradient(-75deg, #FBE4D8,#DFB6B2, #4E4CED);
     color: white;
     border: none;
     border-radius: 10px;
@@ -137,7 +142,7 @@ header nav ul li a {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #2d2f3f;
+    background-color: #242C3B;
     color: white;
     font-size: 1rem;
     margin-top: 20px;

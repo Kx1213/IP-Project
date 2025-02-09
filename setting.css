@@ -1,0 +1,163 @@
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252C3B;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252C3B;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Settings Page */
+.settings-page {
+    padding: 2rem;
+    background-color: #242C3B;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.settings-page h2 {
+    text-align: center;
+}
+
+.settings-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-page label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.settings-page input {
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background-color: #353b45;
+    color: white;
+}
+
+.settings-page button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: linear-gradient(45deg, #4E4CED, #D6D6D6);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.settings-page button:hover {
+    background-color: #e05a50;
+}
+
+/* User Table */
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background: #4E4CED;
+    color: white;
+}
+
+td {
+    background: #353b45;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Footer */
+footer {
+    background-color: #252C3B;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.edit-btn {
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #E53935; /* Red */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #D32F2F;
+}
