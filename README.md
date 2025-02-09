@@ -120,14 +120,14 @@ ResdDB-For user account registration and login.
 
 Assistive AI
 1.Home page Gif layout: help to maintain the height as the same, text aligned with gif.
-![alt text](image.png)
+![alt text](image.jpg)
 2.Rremove function: help to add remove api.
-![alt text](image-1.png)
+![alt text](image-1.jpg)
 3.Total price: help to add caculate total price function.
-![alt text](image-2.png)
+![alt text](image-2.jpg)
 4.Product card border: help to display the product correctly in both moblie view and desktop view.
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](image-3.jpg)
+![alt text](image-4.jpg)
 5.
 
 
