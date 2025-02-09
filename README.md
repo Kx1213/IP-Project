@@ -83,5 +83,4 @@ Acknowledgements
 Inspiration for this project from https://www.pinterest.com/pin/281543724428598/ (color combinations)
 Inspiration for this project from https://themeskingdom.com/(home page design)
 
-
 https://github.com/Kx1213/IP-Project.git
